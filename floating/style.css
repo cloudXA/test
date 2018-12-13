@@ -1,0 +1,310 @@
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    color: #333;
+    
+  }
+  
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    
+}
+
+/* navigation */
+.nav_container {
+  position: fixed;
+  opacity: 1;
+  z-index: 900;
+  visibility: visible;
+  background: white;
+  width: 100%;
+  padding: 10px 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav_container .logo_item {
+  width: 195px;
+  height: 26px;
+  margin: 6px auto 0;
+  cursor: pointer;
+}
+
+.material-icons, .fab, .text_item {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.text_item {
+  color: black;
+  font-size: 14.25px;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 19px;
+  padding-bottom: 9px;
+  text-decoration: none;
+}
+.text_item :hover {
+  text-decoration: black;
+}
+.nav_container .button {
+  display: grid;
+  padding: 12px 11px 8px;
+  color: white;
+  background: #6288a5;
+  border: 1px solid #326891;
+  letter-spacing: 0.05rem;
+  line-height: 11px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* header picture titleline */
+
+.header_h1 {
+  font-size: 2.25rem;
+  line-height: 2.125rem;
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-weight: 500;
+  font-style: italic;
+  width: 750px;
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+}
+.header_hidden {
+  
+  position: absolute;
+  visibility: hidden;
+}
+.header_view {
+  
+  display: inline-block;
+  width: 420px;
+  max-width: 420px;
+}
+
+/* header picture */
+.img_container {
+  margin: 35px 120px;
+}
+.img_container img{
+  height: auto;
+  width: 100%;
+}
+.img_caption {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  margin-right: 7px;
+  color: #666;
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  max-width: 900px;
+}
+.little_size {
+  margin-left: 7px;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #666;
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+
+/* section content icon */
+.header_container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 628px;
+}
+
+.icon_item {
+  display: flex;
+  align-content: right;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+.icon_item ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  
+}
+.icon_item li {
+  display: flex;
+  list-style: none;
+  margin-right: 16px;
+} 
+
+/* paragraph content */
+.paragraph_items, .species_items {
+  width: 1200px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.paragraph_item, .species_item {
+  width: 630px;
+  width: 630px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* picture text content */
+.species_items {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 630px;
+}
+.species_items .item1 {
+  position: absolute;
+  top: 19%;
+  left: 0.25%;
+  width: 150px;
+}
+.species_items  p {
+  font-size: 11.5px;
+  /* background: red; */
+  margin: 0;
+}
+.species_items  span {
+  font-weight: bold;
+  
+}
+.species_items .item2 {
+  position: absolute;
+  top: 19%;
+  left: 26%;
+  width: 150px;
+}
+.species_items .item3 {
+  position: absolute;
+  top: 19%;
+  left: 52%;
+  width: 150px;
+}
+.species_items .item4 {
+  position: absolute;
+  top: 19%;
+  left: 78%;
+  width: 150px;
+   
+}
+.species_items .item5 {
+  position: absolute;
+  top: 70%;
+  left: 0.25%;
+  width: 150px;
+}
+.species_items .item6 {
+  position: absolute;
+  top: 70%;
+  left: 26%;
+  width: 150px;
+}
+.species_items .item7 {
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  width: 150px;
+}
+.species_items .item8 {
+  position: absolute;
+  top: 70%;
+  left: 78%;
+  width: 150px;
+}
+/* video nested content text */
+.video_container {
+  width: 1200px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.video_item {
+  width: 630px;
+  width: 630px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* bottom icon  */
+.bottom_icon {
+  display: flex;
+  width: 630px;
+  width: 630px; 
+  color: white;
+  line-height: 1.5rem;
+  letter-spacing: .05rem; 
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: left;
+  align-content: center;
+
+}
+.bottom_icon button {
+  
+  width: 100%;
+  width: 330px;
+  height: 37.2px;
+  color: white;
+  background-color: #326891;
+  border-radius: 5px;
+  margin-right: 20%;
+  
+  cursor: pointer;
+}
+.bottom_icon ul {
+  display: flex;
+  margin-right: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-content: center;
+  
+}
+.bottom_icon ul > li {
+  background: #999;
+  list-style: none;
+  margin: 0 8px;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.bottom_icon ul > li:nth-child(4) {
+  
+  margin-right: 0;
+  
+}
+
+ 
+  
+
+
+  
+
+  
+
+
+
+
+
